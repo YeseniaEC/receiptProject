@@ -8,16 +8,27 @@ namespace ReceiptProject.Restaurant
         {
             Restaurant obj = new Restaurant ( "Dairy Queen", "123 Main St.", .15, .0725 );
 
-            Console.WriteLine ( "=============={0}==============", DateTime.Now );
-            Console.WriteLine ( "=====================CASHIER====================" );
+            string title = @"
+            
+        ██████╗ ███████╗ ██████╗███████╗██╗██████╗ ████████╗
+        ██╔══██╗██╔════╝██╔════╝██╔════╝██║██╔══██╗╚══██╔══╝
+        ██████╔╝█████╗  ██║     █████╗  ██║██████╔╝   ██║   
+        ██╔══██╗██╔══╝  ██║     ██╔══╝  ██║██╔═══╝    ██║   
+        ██║  ██║███████╗╚██████╗███████╗██║██║        ██║   
+        ╚═╝  ╚═╝╚══════╝ ╚═════╝╚══════╝╚═╝╚═╝        ╚═╝   
+                                                    
+            ";
+            Console.WriteLine (title);
+            Console.WriteLine ( "========================{0}=======================", DateTime.Now );
+            Console.WriteLine ( "===============================CASHIER=============================" );
 
             Console.WriteLine ( "{0}", obj.Name );
             Console.WriteLine ( "{0}", obj.Address );
-            Console.WriteLine ( "================================================" );
+            Console.WriteLine ( "===================================================================" );
 
             obj.GenerateReceipt ( );
-            Console.WriteLine ( "==================END RECEIPT===================" );
-
+            Console.WriteLine ( "=============================END RECEIPT===========================" );
+            Console.ReadLine ( );
 
         }
     }

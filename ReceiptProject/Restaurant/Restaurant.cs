@@ -91,11 +91,11 @@ namespace ReceiptProject.Restaurant
             grandTotal = subtotal + gratuityAmount + taxAmount;
 
             Console.WriteLine ( "Subtotal: {0 :C}", subtotal);
-            Console.WriteLine ( "================================================" );
+            Console.WriteLine ( "===================================================================" );
             Console.WriteLine ( "{0:P} Gratuity: {1:C}", gratuityRate, gratuityAmount );
-            Console.WriteLine ( "================================================" );
+            Console.WriteLine ( "===================================================================" );
             Console.WriteLine ( "{0:p} Tax: {1:C}", taxRate, taxAmount);
-            Console.WriteLine ( "================================================" );
+            Console.WriteLine ( "===================================================================" );
             Console.WriteLine ( "Grand Total: {0:C}", grandTotal );
             
         } 
